@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            function validateform()
+            {
+                var first name=document.getElementById ("first name").value;
+                var last name=document.getElementById ("last name").value;
+                var password=document.getElementById ("password").value;
+                var email=document.getElementById ("email").value;
+                var address=document.getElementById ("address").value;
+                var em=/^[A-Za-z][A-Za-z0-9]@[A-Za-z].[A-Za-z/]
+
+                if (first name==null || first name==" ")
+                {
+                    alert("first name cant be blank");
+                    document.getElementById("first name").innerHTML="please enter first name";
+                }
+                if (last name==null ||last name==" ")
+                {
+                    alert("last name cant be blank");
+                    document.getElementById("last name").innerHTML="please enter last name";
+                }
+                if (address==null ||address ==" ")
+                {
+                    alert("name cant be blank");
+                    document.getElementById("").innerHTML="please enter address";
+                }
+                if (email.match(email))
+                    true;
+                    else{
+                    document.getElementById("email").innerHTML="please enter valid email id";
+                    return false;
+                }
+                if(password.length<6)
+                {
+                    alert("password must be atleast 6 character long");
+                    document.getElementById("pa").innerHTML="please enter password";
+                }
+            }
+        </script>
+        <body>
+        <form action="sample.html" method="post" onsubmit="return validation()">
+            <div class="register">
+                <h2>REGISTER</h2>
+                first name <br><input type="text" id="first name" placeholder="enter your first name" value=""><span id="first name" style="color:red"></span><br>
+                last name  <br><input type="text" id="last name" placeholder="enter your last name" value=""><span id="last name" style="color:red"></span><br>
+                address <br><input type="text" id="address" placeholder="enter your address" value=""><span id="address" style="color:red"></span><br>
+                password <br><input type="text" id="password" placeholder="enter your password" value=""><span id="password" style="color:red"></span><br>
+                
+                email <br><input type="text" id="email" placeholder="enter your valid email" value=""><span id="em" style="color:red"></span><br>
+                
+            </div>
+            <input type="submit" value="register">
+
+        
+    </body>
+</html>
